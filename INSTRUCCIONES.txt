@@ -1,0 +1,11 @@
+Colocar la carpeta: PromoFoodMYSQL en el directorio: C:\xampp\htdocs
+
+La estructura de la base de datos es:
+NOMBRE			TIPO
+nombre			varchar30
+correoElectronico	varchar50
+contrasenia		varchar30
+telefono		varchar30
+
+En el archivo "MainActivity.kt" en la linea 28 se debe cambiar la ip del url.
+Para ver su ip coloquen en el cmd el comando "ipconfig y tomen la ip de la parte donde dice "adaptador de Ethernet Ethernet:"
