@@ -1,5 +1,6 @@
 package com.example.promofood
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -52,5 +53,13 @@ class MainActivity : AppCompatActivity() {
         textCorreoElectronico?.setText("")
         textContrasenia?.setText("")
         textTelefono?.setText("")
+    }
+    fun clickBtnVer(view:View){
+        var textNombre:EditText=findViewById<EditText>(R.id.textConsultar)
+        var nombre=textNombre.text.toString()
+        var intent= Intent(this, MainActivity2::class.java)
+        intent.putExtra("nombre", nombre)
+        startActivity(intent)
+        textNombre.setText("")
     }
 }
