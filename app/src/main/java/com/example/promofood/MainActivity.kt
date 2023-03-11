@@ -16,11 +16,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    fun clickBtnIniciarSesionCliente(view: View){
+        var intent= Intent(this, LoginClienteActivity::class.java)
+        startActivity(intent)
+    }
+
     fun clickbtnRegistrarCliente(view:View){
         var intent= Intent(this, RegistroClienteActivity::class.java)
         startActivity(intent)
     }
-
+    fun clickBtnIniciarSesionRestaurante(view: View){
+        var intent= Intent(this, LoginRestauranteActivity::class.java)
+        startActivity(intent)
+    }
     fun clickbtnRegistrarRestaurante(view:View){
         var intent= Intent(this, RegistroRestauranteActivity::class.java)
         startActivity(intent)

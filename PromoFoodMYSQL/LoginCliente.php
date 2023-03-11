@@ -1,8 +1,9 @@
 <?php
 if($_SERVER["REQUEST_METHOD"]=="GET"){
     require_once 'conexion.php';
-    $nombre=$_GET['nombre'];
-    $query="SELECT * FROM cliente WHERE nombre='".$nombre."'";
+    $correoElectronico=$_GET['correoElectronico'];
+    $contrasenia=$_GET['contrasenia'];
+    $query="SELECT * FROM cliente WHERE correoElectronico='".$correoElectronico."' and contrasenia='".$contrasenia."'";
     $resultado=$mysql->query($query);
     if($mysql->affected_rows>0){
         while($row=$resultado->fetch_assoc()){

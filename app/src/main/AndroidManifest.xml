@@ -15,6 +15,21 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".SesionRestauranteIniciadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SesionClienteRestauranteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SesionClienteIniciadaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRestauranteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginClienteActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistroRestauranteActivity"
             android:exported="false" />
         <activity
