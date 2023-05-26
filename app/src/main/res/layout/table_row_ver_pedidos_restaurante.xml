@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/borde">
+
+    <TextView
+        android:id="@+id/colEstatus"
+        android:layout_width="114dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/borde"
+        android:gravity="center"
+        android:text="Status"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/colDireccionEntrega"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/borde"
+        android:gravity="center"
+        android:text="Direccion Entrega"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/colResumenPedido"
+        android:layout_width="145dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/borde"
+        android:gravity="center"
+        android:text="Resumen"
+        android:textSize="15sp" />
+
+</TableRow>

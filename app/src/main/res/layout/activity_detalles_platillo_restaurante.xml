@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/To"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesPlatilloRestaurante">
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTituloPlatillo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:text="Titulo"
+            android:textColor="@color/black"
+            android:textSize="42sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <TextView
+            android:id="@+id/tituloPrecioPlatillo"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Precio"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textPrecioPlatilloBD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="TextView"
+            android:textSize="23sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="386dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow2">
+
+        <TextView
+            android:id="@+id/tituloIngredientesPlatillo"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_vertical"
+            android:text="Ingredientes"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textIngredientesPlatilloBD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal"
+            android:text="Ingredientes del platillo de la base de datos"
+            android:textSize="20sp" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

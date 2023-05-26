@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="clickBtnVerMenu"
+    tools:context=".DetallesRestauranteActivity">
+
+
+    <TableRow
+        android:id="@+id/rowDomicilioTelefono"
+        android:layout_width="386dp"
+        android:layout_height="65dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowTitulo">
+
+        <TextView
+            android:id="@+id/textDomicilio"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:text="Domicilio"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:text="Telefono"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowBD"
+        android:layout_width="386dp"
+        android:layout_height="65dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowDomicilioTelefono">
+
+        <TextView
+            android:id="@+id/textDomicilioBD"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textTelefonoBD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="25dp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/rowBotones"
+        android:layout_width="377dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerMenu"
+        app:layout_constraintVertical_bias="0.961">
+
+        <ImageButton
+            android:id="@+id/btnCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickBtnVerCarrito"
+            app:srcCompat="@mipmap/carrito" />
+
+        <ImageButton
+            android:id="@+id/btnAjustes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ajustes" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowTitulo"
+        android:layout_width="386dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textNombreRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnVerMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="clickBtnVerMenu"
+        android:text="Ver menú"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rowBD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

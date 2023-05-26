@@ -1,0 +1,5 @@
+Colocar la carpeta: PromoFoodMYSQL en el directorio: C:\xampp\htdocs
+
+En el archivo "MainActivity.kt" en la linea 16 se debe colocar la ip correspondiente y comentar la linea 15 (que es mi ip)
+
+Para ver su ip coloquen en el cmd el comando "ipconfig y tomen la ip de la parte donde dice "adaptador de Ethernet Ethernet:"

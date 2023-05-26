@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borde">
+
+    <TextView
+        android:id="@+id/colNombrePlatillo"
+        android:layout_width="286dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/colVerDetallesPlatillo"
+        android:layout_width="111dp"
+        android:layout_height="match_parent"
+        android:onClick="clickBtnVerDetallesPlatillo"
+        android:text="Ver Detalles" />
+
+</TableRow>

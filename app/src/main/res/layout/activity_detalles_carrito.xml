@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallesCarritoActivity">
+
+    <ScrollView
+        android:id="@+id/scrollViewCarrito"
+        android:layout_width="386dp"
+        android:layout_height="174dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow4">
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="476dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/tbCarrito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnRealizarPedido"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:onClick="clickBtnRealizarPedido"
+        android:text="Realizar pedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDireccionEntrega" />
+
+    <EditText
+        android:id="@+id/textDireccionEntrega"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/borde"
+        android:ems="10"
+        android:hint=" Dirección Entrega"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow5" />
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="386dp"
+        android:layout_height="45dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewCarrito">
+
+        <TextView
+            android:id="@+id/tituloPrecio"
+            android:layout_width="234dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:text="Precio Final:"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textPrecioFinal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/borde"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="386dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/borde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tituloCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Carrito"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="clickBtnVerEstadoPedido"
+        android:text="Ver estado pedidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRealizarPedido"
+        app:layout_constraintVertical_bias="0.252" />
+</androidx.constraintlayout.widget.ConstraintLayout>
